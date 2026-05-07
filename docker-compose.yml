@@ -1,0 +1,9 @@
+services:
+  radicale:
+    build: ./docker
+    container_name: radicale-app
+    network_mode: host
+    restart: always
+    volumes:
+      - ./config:/config
+      - ./data:/data
